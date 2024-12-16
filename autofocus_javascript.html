@@ -6,8 +6,8 @@
         // 이벤트를 연결합니다.
         window.onload = function () {
             // 문서 객체를 선택합니다.
-            let input_1 = document.querySelectorAll('input')[0];
-            let input_2 = document.querySelectorAll('input')[1];
+            let input_1 = document.getEelementById('input1');
+            let input_2 = document.getEelementById('input2');
 
             // input_1
             input_1.onkeydown = function () {
@@ -31,8 +31,8 @@
     </script>
 </head>
 <body>
-    <input type="text" maxlength="6">
+    <input type="text" maxlength="6" id = "input1">
     <span>-</span>
-    <input type="text" maxlength="7">
+    <input type="text" maxlength="7" id = "input2">
 </body>
 </html>
